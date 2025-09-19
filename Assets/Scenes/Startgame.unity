@@ -223948,6 +223948,8 @@ GameObject:
   - component: {fileID: 1677455377}
   - component: {fileID: 1677455376}
   - component: {fileID: 1677455375}
+  - component: {fileID: 1677455381}
+  - component: {fileID: 1677455380}
   - component: {fileID: 1677455379}
   m_Layer: 0
   m_Name: dialog
@@ -224367,6 +224369,137 @@ MonoBehaviour:
   animClip: {fileID: 0}
   audiClip: {fileID: 0}
   stringVar: School
+  stringVar2: 
+  animName: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 0}
+  showText: {fileID: 0}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  targetScript: {fileID: 0}
+  methodName: Marah
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+--- !u!114 &1677455380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677455369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b96f699e9e1ca47b69a675ab34269d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: Oke, siap ya... Aku kasih waktu dikit buat kabur dulu.
+  target: {fileID: 1969693951}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  autoSkip: 0
+  ff: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 8300000, guid: fb4d48de4d48c9845b4ecdc00bf8e58c, type: 3}
+  stringVar: 
+  stringVar2: 
+  animName: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 0}
+  showText: {fileID: 0}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  targetScript: {fileID: 0}
+  methodName: Marah
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+--- !u!114 &1677455381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677455369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b96f699e9e1ca47b69a675ab34269d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: 'Udah ngerti, kan? Kalo bingung, inget aja: ambil semua koin, hindarin
+    aku.'
+  target: {fileID: 1969693951}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  autoSkip: 0
+  ff: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 8300000, guid: 159e82a81b72b7b45ace85c2d113cdca, type: 3}
+  stringVar: 
   stringVar2: 
   animName: 
   colorVar: {r: 1, g: 1, b: 1, a: 1}
