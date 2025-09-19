@@ -33,7 +33,7 @@ public class ChaseState : EnemyState
     else if (distanceToPlayer <= enemy.tangkapDistance) //baru
     {
         enemy.ChangeState(new NearIdleState(enemy));
-		enemy.gemover.SetActive (true);
+	//	enemy.gemover.SetActive (true);
     }
     else if (distanceToPlayer > enemy.chaseDistance * 1f)
     {

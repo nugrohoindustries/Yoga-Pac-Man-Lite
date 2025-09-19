@@ -4,10 +4,23 @@ using UnityEngine;
 
 public class NearIdleState : EnemyState
 {
+	private float idleTime = 2f;
+    private float timer;
+	
     public NearIdleState(EnemyAI enemy) : base(enemy) { }
 
     public override void Enter()
     {
+		timer = 0f;
+        enemy.Agent.isStopped = true;
+    //    enemy.Animator.SetTrigger("Idle");
+
+        
+    //    if (enemy.gemover != null)
+   //     {
+    //        enemy.gemover.SetActive(true);
+    //    }
+		
         enemy.Agent.ResetPath(); 
         enemy.animator.SetTrigger("NearIdle"); 
     }
@@ -24,10 +37,29 @@ public class NearIdleState : EnemyState
         {
             enemy.ChangeState(new ChaseState(enemy));
         }
+		
+		timer += Time.deltaTime;
+
+        
+        if (Random.value < 0.3f)
+        {
+            enemy.ChangeState(new AttackState(enemy));
+            return;
+        }
+
+        if (timer >= idleTime)
+        {
+            enemy.ChangeState(new PatrolState(enemy));
+        }
     }
 
     public override void Exit()
     {
-        // mbuh
+        enemy.Agent.isStopped = false;
+
+        if (enemy.gemover != null)
+        {
+            enemy.gemover.SetActive(false);
+        }
     }
 }

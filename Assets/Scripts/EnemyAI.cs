@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
 	
 	[Header("Audio")]
 	public AudioSource audioSource;
+	public AudioClip attackClip;
 	public List<AudioClip> footstepClips;
 	public float footstepInterval = 0.5f; // time between steps
 
@@ -22,6 +23,9 @@ public class EnemyAI : MonoBehaviour
 	public float tangkapDistance = 1f;
     public float waypointTolerance = 1f;
     public float retreatSpeedMultiplier = 1.5f;
+	
+	[Header("Attack")]
+	public GameObject attackHitbox;
 
     private UnityEngine.AI.NavMeshAgent agent;
     private EnemyState currentState;
@@ -56,11 +60,33 @@ public class EnemyAI : MonoBehaviour
         if (currentState != null)
             currentState.Enter();
     }
+	
+	public void EnableAttackHitbox()
+	{
+    attackHitbox.SetActive(true);
+    Invoke(nameof(DisableAttackHitbox), 0.3f);
+	}
+
+	private void DisableAttackHitbox()
+	{
+    attackHitbox.SetActive(false);
+	}
 
     public void SetPlayerPowerUp(bool active)
     {
         playerHasPowerUp = active;
     }
-
+	
+	public void DealDamage()
+	{
+    if (player != null)
+    {
+        Karakter ph = player.GetComponent<Karakter>();
+        if (ph != null)
+        {
+            ph.TakeDamage(1);
+        }
+    }
+	}
     public UnityEngine.AI.NavMeshAgent Agent => agent;
 }
